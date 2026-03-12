@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thiết Bị Spa Minh Bảo</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f6f8}
+header{background:#0f172a;color:white;padding:20px}
+header h2{margin:0}
+
+nav{margin-top:10px;display:flex;gap:20px;align-items:center}
+
+nav a{color:white;text-decoration:none;font-weight:bold}
+
+/* dropdown menu */
+.menu-item{position:relative;padding-bottom:8px}
+.dropdown{
+position:absolute;
+top:100%;
+left:0;
+background:white;
+color:black;
+border-radius:8px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+display:none;
+min-width:180px;
+padding-top:5px;
+}
+
+.dropdown a{
+display:block;
+padding:10px 15px;
+color:#111;
+font-weight:normal
+}
+
+.dropdown a:hover{background:#f1f1f1}
+
+.menu-item:hover .dropdown{display:block}
+
+.hero{background:linear-gradient(135deg,#111,#444);color:white;padding:80px 20px;text-align:center}
+.hero h1{font-size:36px;margin-bottom:10px}
+.hero p{opacity:0.9}
+
+button{background:#e11d48;color:white;border:none;padding:12px 20px;border-radius:6px;cursor:pointer}
+
+.section{padding:60px 20px;max-width:1200px;margin:auto}
+.section h2{text-align:center;margin-bottom:40px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
+.card{background:white;border-radius:12px;padding:20px;box-shadow:0 6px 15px rgba(0,0,0,0.08);transition:0.2s}
+.card:hover{transform:translateY(-5px)}
+.card h3{margin-top:0}
+
+.price{color:#e11d48;font-weight:bold}
+
+.service{background:white;border-radius:12px;padding:25px;box-shadow:0 6px 15px rgba(0,0,0,0.08)}
+
+footer{background:#0f172a;color:white;text-align:center;padding:30px;margin-top:40px}
+
+.contact-box{background:white;padding:30px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.08)}
+
+input,textarea{width:100%;padding:10px;margin-top:10px;border:1px solid #ccc;border-radius:6px}
+form button{margin-top:10px}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Minh Bảo - Thiết Bị Spa & Thẩm Mỹ</h2>
+
+<nav>
+<a href="#home">Trang chủ</a>
+
+<div class="menu-item">
+<a href="#trietlong">Máy triệt lông ▾</a>
+<div class="dropdown">
+<a href="#trietlong">IPL</a>
+<a href="#trietlong">OPT</a>
+<a href="#trietlong">Diode Laser</a>
+<a href="#trietlong">SHR</a>
+</div>
+</div>
+
+<div class="menu-item">
+<a href="#laser">Laser thẩm mỹ ▾</a>
+<div class="dropdown">
+<a href="#laser">Q‑Switch ND YAG</a>
+<a href="#laser">CO2 Fractional</a>
+<a href="#laser">Laser Pico</a>
+<a href="#laser">Laser trị nám</a>
+</div>
+</div>
+
+<div class="menu-item">
+<a href="#giambeo">Máy giảm béo ▾</a>
+<div class="dropdown">
+<a href="#giambeo">Cavitation 40K</a>
+<a href="#giambeo">RF nâng cơ</a>
+<a href="#giambeo">Lipo Laser</a>
+</div>
+</div>
+
+<div class="menu-item">
+<a href="#thanhly">Máy thanh lý ▾</a>
+<div class="dropdown">
+<a href="#thanhly">Máy triệt lông thanh lý</a>
+<a href="#thanhly">Laser thanh lý</a>
+<a href="#thanhly">Máy spa khác</a>
+</div>
+</div>
+
+<div class="menu-item">
+<a href="#suamay">Sửa máy spa ▾</a>
+<div class="dropdown">
+<a href="#suamay">Sửa máy triệt lông</a>
+<a href="#suamay">Sửa laser CO2</a>
+<a href="#suamay">Sửa Q‑Switch</a>
+<a href="#suamay">Thay linh kiện</a>
+</div>
+</div>
+
+<a href="#lienhe">Liên hệ</a>
+
+</nav>
+</header>
+
+<div id="home" class="hero">
+<h1>Cung cấp thiết bị spa chuyên nghiệp</h1>
+<p>Máy mới - Máy thanh lý 90‑98% - Bảo hành dài hạn</p>
+<a href="#lienhe"><button>Liên hệ tư vấn ngay</button></a>
+</div>
+
+<div id="trietlong" class="section">
+<h2>Máy triệt lông</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Máy Triệt Lông Diode Laser 808nm</h3>
+<p>Công nghệ triệt lông hiện đại cho spa.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+<div class="card">
+<h3>Máy Triệt Lông IPL</h3>
+<p>Phù hợp spa mới mở.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+<div class="card">
+<h3>Máy Triệt Lông OPT</h3>
+<p>Công nghệ triệt lông nâng cấp.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+<div class="card">
+<h3>Máy Triệt Lông SHR</h3>
+<p>Triệt nhanh, ít đau.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+</div>
+</div>
+
+<div id="laser" class="section">
+<h2>Laser thẩm mỹ</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Laser Q‑Switch ND YAG</h3>
+<p>Điều trị nám, tàn nhang, xóa xăm.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+<div class="card">
+<h3>Laser CO2 Fractional</h3>
+<p>Trị sẹo rỗ, tái tạo da.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+</div>
+</div>
+
+<div id="giambeo" class="section">
+<h2>Máy giảm béo</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Máy Cavitation 40K</h3>
+<p>Giảm mỡ bụng, đùi, bắp tay.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+<div class="card">
+<h3>Máy RF nâng cơ</h3>
+<p>Trẻ hóa da, săn chắc da.</p>
+<p class="price">Giá: Liên hệ</p>
+<button>Xem chi tiết</button>
+</div>
+
+</div>
+</div>
+
+<div id="suamay" class="section">
+<h2>Dịch vụ sửa chữa thiết bị spa</h2>
+<div class="grid">
+
+<div class="service">
+<h3>Sửa máy triệt lông</h3>
+<p>IPL, SHR, Diode Laser các dòng máy spa.</p>
+</div>
+
+<div class="service">
+<h3>Sửa laser thẩm mỹ</h3>
+<p>CO2 Fractional, Q‑Switch, Laser trị nám.</p>
+</div>
+
+<div class="service">
+<h3>Sửa máy giảm béo</h3>
+<p>RF, Cavitation, Lipo Laser.</p>
+</div>
+
+<div class="service">
+<h3>Thay linh kiện</h3>
+<p>Thay tay cầm, nguồn, board công suất.</p>
+</div>
+
+</div>
+</div>
+
+<div id="thanhly" class="section">
+<h2>Máy thanh lý giá tốt</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Diode Laser 95%</h3>
+<p>Bảo hành 12 tháng</p>
+<p class="price">Tiết kiệm 20 - 30 triệu</p>
+<button>Xem máy</button>
+</div>
+
+<div class="card">
+<h3>Laser Q‑Switch 90%</h3>
+<p>Máy đẹp, hoạt động ổn định</p>
+<p class="price">Giá thanh lý</p>
+<button>Xem máy</button>
+</div>
+
+</div>
+</div>
+
+<div id="lienhe" class="section">
+<h2>Liên hệ tư vấn</h2>
+<div class="contact-box">
+<p><b>Trung tâm bảo hành và cung cấp thiết bị spa Minh Bảo</b></p>
+<p>Hotline: 0929.524.048</p>
+<p>Facebook: Trung tâm bảo hành và cung cấp thiết bị spa</p>
+
+<form id="contactForm">
+<input id="name" placeholder="Tên của bạn">
+<input id="phone" placeholder="Số điện thoại">
+<textarea id="message" placeholder="Nội dung cần tư vấn"></textarea>
+<button type="submit">Gửi yêu cầu</button>
+</form>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+e.preventDefault();
+
+let name=document.getElementById('name').value;
+let phone=document.getElementById('phone').value;
+let message=document.getElementById('message').value;
+
+let text=`Khách liên hệ từ website:%0A`+
+`Tên: ${name}%0A`+
+`SĐT: ${phone}%0A`+
+`Nội dung: ${message}`;
+
+// mở Zalo để gửi cho bạn
+window.open("https://zalo.me/0929524048?text="+text,"_blank");
+});
+</script>
+
+</div>
+</div>
+
+<footer>
+<p>© 2026 Thiết Bị Spa Minh Bảo</p>
+</footer>
+
+<!-- ADMIN UPLOAD PANEL -->
+<div id="adminLoginBtn" style="position:fixed;left:20px;bottom:20px;z-index:1000;">
+<button onclick="toggleAdmin()" style="cursor:pointer;">Admin</button>
+</div>
+
+<div id="adminPanel" style="display:none;position:fixed;left:20px;bottom:80px;background:white;padding:20px;border-radius:10px;width:260px;box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+<h3>Admin đăng sản phẩm</h3>
+<input id="adminPass" type="password" placeholder="Nhập mật khẩu">
+<button onclick="checkLogin()">Đăng nhập</button>
+
+<div id="uploadArea" style="display:none;margin-top:10px;">
+<input id="productName" placeholder="Tên máy">
+<input id="productPrice" placeholder="Giá">
+<textarea id="productDesc" placeholder="Mô tả chi tiết máy" style="width:100%;margin-top:8px"></textarea>
+<input id="productImage" type="file" style="margin-top:8px">
+<button onclick="addProduct()">Đăng sản phẩm</button>
+</div>
+</div>
+
+<script>
+const ADMIN_PASSWORD="minhbao";
+
+function toggleAdmin(){
+const panel=document.getElementById("adminPanel");
+
+// nếu đang ẩn thì hiện
+if(panel.style.display === "none" || panel.style.display === ""){
+panel.style.display = "block";
+}else{
+panel.style.display = "none";
+}
+}
+
+function checkLogin(){
+let pass=document.getElementById("adminPass").value;
+if(pass===ADMIN_PASSWORD){
+document.getElementById("uploadArea").style.display="block";
+}else{
+alert("Sai mật khẩu");
+}
+}
+
+function adminLogin(){
+let pass=prompt("Nhập mật khẩu admin");
+if(pass===ADMIN_PASSWORD){
+document.getElementById("adminPanel").style.display="block";
+}else{
+alert("Sai mật khẩu");
+}
+}
+
+// Load sản phẩm đã lưu
+window.addEventListener("load",loadProducts);
+
+function loadProducts(){
+let data=localStorage.getItem("products");
+if(!data) return;
+
+let products=JSON.parse(data);
+const grid=document.querySelector('#trietlong .grid');
+
+products.forEach(p=>{
+const card=document.createElement('div');
+card.className='card';
+card.innerHTML=`
+<img src="${p.img}" style="width:100%;border-radius:8px;margin-bottom:10px">
+<h3>${p.name}</h3>
+<p class="price">${p.price}</p>
+<button onclick="showDetail('${p.name}','${p.desc}','${p.img}')">Xem chi tiết</button>
+`;
+
+grid.appendChild(card);
+});
+}
+
+function addProduct(){
+const name=document.getElementById('productName').value;
+const price=document.getElementById('productPrice').value;
+const desc=document.getElementById('productDesc').value;
+const file=document.getElementById('productImage').files[0];
+
+if(!name || !file) return alert("Nhập tên và chọn ảnh");
+
+const reader=new FileReader();
+reader.onload=function(e){
+const img=e.target.result;
+const grid=document.querySelector('#trietlong .grid');
+
+const card=document.createElement('div');
+card.className='card';
+card.innerHTML=`
+<img src="${img}" style="width:100%;border-radius:8px;margin-bottom:10px">
+<h3>${name}</h3>
+<p class="price">${price}</p>
+<button onclick="showDetail('${name}','${desc}','${img}')">Xem chi tiết</button>
+`;
+
+grid.appendChild(card);
+
+let products=JSON.parse(localStorage.getItem("products")||"[]");
+products.push({name:name,price:price,desc:desc,img:img});
+localStorage.setItem("products",JSON.stringify(products));
+};
+
+reader.readAsDataURL(file);
+}
+
+function showDetail(title,desc,img){
+const win = window.open("","_blank");
+
+win.document.write(`
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${title}</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f6f8}
+header{background:#0f172a;color:white;padding:20px}
+header h2{margin:0}
+.hero{background:linear-gradient(135deg,#111,#444);color:white;padding:70px 20px;text-align:center}
+.hero h1{margin:0;font-size:34px}
+.container{max-width:1200px;margin:auto;padding:40px 20px}
+.product{display:grid;grid-template-columns:1fr 1fr;gap:40px;background:white;padding:30px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+.mainimg{width:100%;border-radius:10px}
+.gallery{display:flex;gap:10px;margin-top:10px}
+.gallery img{width:90px;height:70px;object-fit:cover;border-radius:6px;cursor:pointer}
+.price{color:#e11d48;font-weight:bold;font-size:22px;margin:10px 0}
+button{background:#e11d48;color:white;border:none;padding:12px 20px;border-radius:6px;cursor:pointer}
+.info p{line-height:1.6}
+.related{margin-top:50px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 6px 15px rgba(0,0,0,0.08)}
+.card img{width:100%;border-radius:8px;margin-bottom:10px}
+footer{background:#0f172a;color:white;text-align:center;padding:25px;margin-top:50px}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Minh Bảo - Thiết Bị Spa & Thẩm Mỹ</h2>
+<nav style="margin-top:10px;display:flex;gap:20px;flex-wrap:wrap">
+<a href="index.html#home" style="color:white;text-decoration:none;font-weight:bold">Trang chủ</a>
+<a href="index.html#trietlong" style="color:white;text-decoration:none">Máy triệt lông</a>
+<a href="index.html#laser" style="color:white;text-decoration:none">Laser thẩm mỹ</a>
+<a href="index.html#giambeo" style="color:white;text-decoration:none">Máy giảm béo</a>
+<a href="index.html#thanhly" style="color:white;text-decoration:none">Máy thanh lý</a>
+<a href="index.html#suamay" style="color:white;text-decoration:none">Sửa máy spa</a>
+<a href="index.html#lienhe" style="color:white;text-decoration:none">Liên hệ</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>${title}</h1>
+<p>Thiết bị spa chính hãng - Bảo hành dài hạn</p>
+</div>
+
+<div class="container">
+
+<div class="product">
+
+<div>
+<img id="mainImage" src="${img}" class="mainimg">
+
+<div class="gallery">
+<img src="${img}" onclick="document.getElementById('mainImage').src=this.src">
+<img src="${img}" onclick="document.getElementById('mainImage').src=this.src">
+<img src="${img}" onclick="document.getElementById('mainImage').src=this.src">
+</div>
+
+</div>
+
+<div class="info">
+<h2>${title}</h2>
+<p class="price">Giá: Liên hệ</p>
+
+<p>${desc}</p>
+
+<h3>Liên hệ tư vấn</h3>
+<p>Hotline: <b>0929.524.048</b></p>
+
+<a href="https://zalo.me/0929524048" target="_blank">
+<button>Chat Zalo hỏi máy</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="related">
+<h2>Sản phẩm khác</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="${img}">
+<h3>Máy Triệt Lông IPL</h3>
+<p>Phù hợp spa mới mở</p>
+</div>
+
+<div class="card">
+<img src="${img}">
+<h3>Laser Q‑Switch ND YAG</h3>
+<p>Trị nám, xóa xăm</p>
+</div>
+
+<div class="card">
+<img src="${img}">
+<h3>Laser CO2 Fractional</h3>
+<p>Trị sẹo rỗ, tái tạo da</p>
+</div>
+
+<div class="card">
+<img src="${img}">
+<h3>Máy Cavitation 40K</h3>
+<p>Giảm béo spa</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+<p>© Thiết Bị Spa Minh Bảo</p>
+</footer>
+
+</body>
+</html>
+`);
+
+win.document.close();
+}
+</script>
+
+<!-- Floating Contact Buttons -->
+<div style="position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:999;">
+
+<a href="https://zalo.me/0929524048" target="_blank" style="text-decoration:none;">
+<div style="background:#0068ff;color:white;padding:12px 16px;border-radius:30px;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2);">💬 Chat Zalo</div>
+</a>
+
+<a href="tel:0929524048" style="text-decoration:none;">
+<div style="background:#16a34a;color:white;padding:12px 16px;border-radius:30px;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2);">📞 Gọi ngay</div>
+</a>
+
+</div>
+
+</body>
+</html>
